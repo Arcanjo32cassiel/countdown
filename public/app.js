@@ -12,10 +12,11 @@ const newyARNtime = new Date(`january 01 ${nextYar} 00:00:00`);
 dayevent.textContent = nextYar;
 
 const insertvalues = ({ days, hours, minutes, seconds }) => {
-    day.textContent = days < 10 ? '0' + days : days;
-    hour.textContent = hours < 10 ? '0' + hours : hours;
-    minute.textContent = minutes < 10 ? '0' + minutes : minutes;
-    second.textContent = seconds < 10 ? '0' + seconds : seconds;
+
+    day.textContent = `0${days}`.slice(-2)
+    hour.textContent = `0${hours}`.slice(-2)
+    minute.textContent = `0${minutes}`.slice(-2)
+    second.textContent = `0${seconds}`.slice(-2)
 }
 const updatecountdown = () => {
     const currentTime = new Date();
