@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 /node_modules
+=======
+node_modules
+
+yarn-error.log
+>>>>>>> 5aecde50eb39d28c7ea8082e6ed063c63c3c98a3
